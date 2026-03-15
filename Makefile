@@ -1,4 +1,7 @@
-.PHONY: help up-all down status logs
+# Явная загрузка .env (решает проблему, когда переменные не подтягиваются)
+COMPOSE := docker compose --env-file .env
+
+.PHONY: help setup-env up-all down status logs
 .PHONY: up-mlflow down-mlflow logs-mlflow
 .PHONY: up-airflow down-airflow logs-airflow
 .PHONY: up-lakefs down-lakefs logs-lakefs
@@ -53,103 +56,107 @@ help:
 	@echo ""
 	@echo ""
 
+# Создать .env из шаблона (если не существует)
+setup-env:
+	@if [ ! -f .env ]; then cp .env.example .env && echo "Создан .env из .env.example"; else echo ".env уже существует"; fi
+
 # Запуск всех профилей
-up-all:
-	docker compose --profile mlflow --profile airflow --profile lakefs --profile jupyterhub --profile ml-service --profile monitoring --profile prompt-storage up -d
+up-all: setup-env
+	$(COMPOSE) --profile mlflow --profile airflow --profile lakefs --profile jupyterhub --profile ml-service --profile monitoring --profile prompt-storage up -d
 
 # Остановка всех сервисов
-down:
-	docker compose down
+down: setup-env
+	$(COMPOSE) down
 
 # Статус контейнеров
-status:
-	docker compose ps
+status: setup-env
+	$(COMPOSE) ps
 
 # Логи всех контейнеров
-logs:
-	docker compose logs -f
+logs: setup-env
+	$(COMPOSE) logs -f
 
 # ==============================
 # Этап 1: MLflow
 # ==============================
-up-mlflow:
-	docker compose --profile mlflow up -d
+up-mlflow: setup-env
+	$(COMPOSE) --profile mlflow up -d
 
 down-mlflow:
-	docker compose --profile mlflow down
+	$(COMPOSE) --profile mlflow down
 
 logs-mlflow:
-	docker compose --profile mlflow logs -f
+	$(COMPOSE) --profile mlflow logs -f
 
 # ==============================
 # Этап 2: Airflow
 # ==============================
-up-airflow:
-	docker compose --profile airflow up -d
+up-airflow: setup-env
+	$(COMPOSE) --profile airflow up -d
 
 down-airflow:
-	docker compose --profile airflow down
+	$(COMPOSE) --profile airflow down
 
 logs-airflow:
-	docker compose --profile airflow logs -f
+	$(COMPOSE) --profile airflow logs -f
 
 # ==============================
 # Этап 3: LakeFS
 # ==============================
-up-lakefs:
-	docker compose --profile lakefs up -d
+up-lakefs: setup-env
+	$(COMPOSE) --profile lakefs up -d
 
 down-lakefs:
-	docker compose --profile lakefs down
+	$(COMPOSE) --profile lakefs down
 
 logs-lakefs:
-	docker compose --profile lakefs logs -f
+	$(COMPOSE) --profile lakefs logs -f
 
 # ==============================
 # Этап 4: JupyterHub
 # ==============================
-up-jupyterhub:
-	docker compose --profile jupyterhub up -d
+up-jupyterhub: setup-env
+	$(COMPOSE) --profile jupyterhub up -d
 
 down-jupyterhub:
-	docker compose --profile jupyterhub down
+	$(COMPOSE) --profile jupyterhub down
 
 logs-jupyterhub:
-	docker compose --profile jupyterhub logs -f
+	$(COMPOSE) --profile jupyterhub logs -f
 
 # ==============================
 # Этап 5: ML-сервис
 # ==============================
-up-ml-service:
-	docker compose --profile ml-service up -d
+up-ml-service: setup-env
+	$(COMPOSE) --profile ml-service up -d
 
 down-ml-service:
-	docker compose --profile ml-service down
+	$(COMPOSE) --profile ml-service down
 
 logs-ml-service:
-	docker compose --profile ml-service logs -f
+	$(COMPOSE) --profile ml-service logs -f
 
 # ==============================
 # Этап 6: Мониторинг
 # ==============================
-up-monitoring:
-	docker compose --profile monitoring up -d
+up-monitoring: setup-env
+	$(COMPOSE) --profile monitoring up -d
 
 down-monitoring:
-	docker compose --profile monitoring down
+	$(COMPOSE) --profile monitoring down
 
 logs-monitoring:
-	docker compose --profile monitoring logs -f
+	$(COMPOSE) --profile monitoring logs -f
 
 # ==============================
 # Этап 9: Prompt Storage
 # ==============================
-up-prompt-storage:
-	docker compose --profile prompt-storage up -d
+up-prompt-storage: setup-env
+	$(COMPOSE) --profile prompt-storage up -d
 
 down-prompt-storage:
-	docker compose --profile prompt-storage down
+	$(COMPOSE) --profile prompt-storage down
 
 logs-prompt-storage:
-	docker compose --profile prompt-storage logs -f
+	$(COMPOSE) --profile prompt-storage logs -f
 
