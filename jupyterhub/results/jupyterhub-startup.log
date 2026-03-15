@@ -1,0 +1,470 @@
+jupyterhub  | [I 2026-03-15 10:43:13.424 JupyterHub app:2859] Running JupyterHub version 4.0.2
+jupyterhub  | [I 2026-03-15 10:43:13.425 JupyterHub app:2889] Using Authenticator: jupyterhub.auth.DummyAuthenticator-4.0.2
+jupyterhub  | [I 2026-03-15 10:43:13.425 JupyterHub app:2889] Using Spawner: jupyterhub.spawner.SimpleLocalProcessSpawner-4.0.2
+jupyterhub  | [I 2026-03-15 10:43:13.425 JupyterHub app:2889] Using Proxy: jupyterhub.proxy.ConfigurableHTTPProxy-4.0.2
+jupyterhub  | [I 2026-03-15 10:43:13.428 JupyterHub app:1709] Writing cookie_secret to /srv/jupyterhub/jupyterhub_cookie_secret
+jupyterhub  | [I 2026-03-15 10:43:13.441 alembic.runtime.migration migration:210] Context impl SQLiteImpl.
+jupyterhub  | [I 2026-03-15 10:43:13.441 alembic.runtime.migration migration:213] Will assume non-transactional DDL.
+jupyterhub  | [I 2026-03-15 10:43:13.449 alembic.runtime.migration migration:621] Running stamp_revision  -> 0eee8c825d24
+jupyterhub  | [I 2026-03-15 10:43:13.597 JupyterHub proxy:556] Generating new CONFIGPROXY_AUTH_TOKEN
+jupyterhub  | [I 2026-03-15 10:43:13.623 JupyterHub roles:238] Adding role admin for User: admin
+jupyterhub  | [I 2026-03-15 10:43:13.629 JupyterHub roles:238] Adding role user for User: admin
+jupyterhub  | [I 2026-03-15 10:43:13.633 JupyterHub app:1984] Not using allowed_users. Any authenticated user will be allowed.
+jupyterhub  | [I 2026-03-15 10:43:13.641 JupyterHub app:2928] Initialized 0 spawners in 0.001 seconds
+jupyterhub  | [I 2026-03-15 10:43:13.644 JupyterHub metrics:278] Found 0 active users in the last ActiveUserPeriods.twenty_four_hours
+jupyterhub  | [I 2026-03-15 10:43:13.644 JupyterHub metrics:278] Found 0 active users in the last ActiveUserPeriods.seven_days
+jupyterhub  | [I 2026-03-15 10:43:13.644 JupyterHub metrics:278] Found 0 active users in the last ActiveUserPeriods.thirty_days
+jupyterhub  | [W 2026-03-15 10:43:13.645 JupyterHub proxy:746] Running JupyterHub without SSL.  I hope there is SSL termination happening somewhere else...
+jupyterhub  | [I 2026-03-15 10:43:13.645 JupyterHub proxy:750] Starting proxy @ http://0.0.0.0:8000
+jupyterhub  | 2026-03-15T10:43:13.860Z [ConfigProxy] [32minfo[39m: Proxying http://8000:0.0.0.0 to (no default)
+jupyterhub  | 2026-03-15T10:43:13.864Z [ConfigProxy] [32minfo[39m: Proxy API at http://8001:127.0.0.1/api/routes
+jupyterhub  | 2026-03-15T10:43:14.170Z [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+jupyterhub  | [I 2026-03-15 10:43:14.170 JupyterHub app:3178] Hub API listening on http://0.0.0.0:8081/hub/
+jupyterhub  | [I 2026-03-15 10:43:14.170 JupyterHub app:3180] Private Hub API connect url http://jupyterhub:8081/hub/
+jupyterhub  | 2026-03-15T10:43:14.171Z [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+jupyterhub  | [I 2026-03-15 10:43:14.172 JupyterHub proxy:477] Adding route for Hub: / => http://jupyterhub:8081
+jupyterhub  | 2026-03-15T10:43:14.173Z [ConfigProxy] [32minfo[39m: Adding route / -> http://jupyterhub:8081
+jupyterhub  | 2026-03-15T10:43:14.173Z [ConfigProxy] [32minfo[39m: Route added / -> http://jupyterhub:8081
+jupyterhub  | 2026-03-15T10:43:14.173Z [ConfigProxy] [32minfo[39m: 201 POST /api/routes/ 
+jupyterhub  | [I 2026-03-15 10:43:14.173 JupyterHub app:3245] JupyterHub is now running at http://0.0.0.0:8000
+jupyterhub  | [I 2026-03-15 10:43:15.641 JupyterHub log:191] 302 GET /user/admin/api/events/subscribe?token=[secret] -> /hub/user/admin/api/events/subscribe?token=[secret] (@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:43:16.973 JupyterHub log:191] 302 GET /user/admin/api/kernels?1773571396966 -> /hub/user/admin/api/kernels?1773571396966 (@172.20.0.1) 0.41ms
+jupyterhub  | [W 2026-03-15 10:43:16.977 JupyterHub base:415] Invalid or expired cookie token
+jupyterhub  | [I 2026-03-15 10:43:16.978 JupyterHub log:191] 302 GET /hub/user/admin/api/kernels?1773571396966 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%3F1773571396966 (@172.20.0.1) 1.71ms
+jupyterhub  | [I 2026-03-15 10:43:16.994 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%3F1773571396966 (@172.20.0.1) 13.14ms
+jupyterhub  | [I 2026-03-15 10:43:17.603 JupyterHub log:191] 302 GET /user/admin/api/sessions?1773571397600 -> /hub/user/admin/api/sessions?1773571397600 (@172.20.0.1) 0.41ms
+jupyterhub  | [I 2026-03-15 10:43:17.606 JupyterHub log:191] 302 GET /hub/user/admin/api/sessions?1773571397600 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fsessions%3F1773571397600 (@172.20.0.1) 0.83ms
+jupyterhub  | [I 2026-03-15 10:43:17.613 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fsessions%3F1773571397600 (@172.20.0.1) 1.01ms
+jupyterhub  | [I 2026-03-15 10:43:18.437 JupyterHub log:191] 302 GET /user/admin/api/terminals?1773571398432 -> /hub/user/admin/api/terminals?1773571398432 (@172.20.0.1) 0.44ms
+jupyterhub  | [I 2026-03-15 10:43:18.441 JupyterHub log:191] 302 GET /hub/user/admin/api/terminals?1773571398432 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fterminals%3F1773571398432 (@172.20.0.1) 0.79ms
+jupyterhub  | [I 2026-03-15 10:43:18.444 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fterminals%3F1773571398432 (@172.20.0.1) 0.77ms
+jupyterhub  | [I 2026-03-15 10:43:20.155 JupyterHub log:191] 302 GET /user/admin/api/events/subscribe?token=[secret] -> /hub/user/admin/api/events/subscribe?token=[secret] (@172.20.0.1) 0.38ms
+jupyterhub  | [I 2026-03-15 10:43:22.987 JupyterHub log:191] 302 GET /user/admin/api/contents?content=1&1773571402984 -> /hub/user/admin/api/contents?content=1&1773571402984 (@172.20.0.1) 0.39ms
+jupyterhub  | [I 2026-03-15 10:43:22.991 JupyterHub log:191] 302 GET /hub/user/admin/api/contents?content=1&1773571402984 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fcontents%3Fcontent%3D1%261773571402984 (@172.20.0.1) 1.05ms
+jupyterhub  | [I 2026-03-15 10:43:22.995 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fcontents%3Fcontent%3D1%261773571402984 (@172.20.0.1) 0.83ms
+jupyterhub  | [I 2026-03-15 10:43:26.120 JupyterHub log:191] 302 GET /user/admin/api/kernels/2376c6e6-7dca-451a-8205-aec8cf83ba1d?1773571406117 -> /hub/user/admin/api/kernels/2376c6e6-7dca-451a-8205-aec8cf83ba1d?1773571406117 (@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:43:26.124 JupyterHub log:191] 302 GET /hub/user/admin/api/kernels/2376c6e6-7dca-451a-8205-aec8cf83ba1d?1773571406117 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%2F2376c6e6-7dca-451a-8205-aec8cf83ba1d%3F1773571406117 (@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:43:26.127 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%2F2376c6e6-7dca-451a-8205-aec8cf83ba1d%3F1773571406117 (@172.20.0.1) 0.72ms
+jupyterhub  | [I 2026-03-15 10:43:26.134 JupyterHub log:191] 302 GET /user/admin/api/kernels?1773571406129 -> /hub/user/admin/api/kernels?1773571406129 (@172.20.0.1) 0.35ms
+jupyterhub  | [I 2026-03-15 10:43:26.140 JupyterHub log:191] 302 GET /hub/user/admin/api/kernels?1773571406129 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%3F1773571406129 (@172.20.0.1) 0.89ms
+jupyterhub  | [I 2026-03-15 10:43:26.143 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fkernels%3F1773571406129 (@172.20.0.1) 0.80ms
+jupyterhub  | [I 2026-03-15 10:43:32.154 JupyterHub log:191] 302 GET /user/admin/api/events/subscribe?token=[secret] -> /hub/user/admin/api/events/subscribe?token=[secret] (@172.20.0.1) 0.39ms
+jupyterhub  | [I 2026-03-15 10:43:33.007 JupyterHub log:191] 302 GET /user/admin/api/contents?content=1&1773571412999 -> /hub/user/admin/api/contents?content=1&1773571412999 (@172.20.0.1) 0.38ms
+jupyterhub  | [I 2026-03-15 10:43:33.010 JupyterHub log:191] 302 GET /hub/user/admin/api/contents?content=1&1773571412999 -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fcontents%3Fcontent%3D1%261773571412999 (@172.20.0.1) 0.80ms
+jupyterhub  | [I 2026-03-15 10:43:33.013 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Fapi%2Fcontents%3Fcontent%3D1%261773571412999 (@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:43:33.853 JupyterHub log:191] 302 GET /user/admin/lab/tree/lakefs_example.ipynb -> /hub/user/admin/lab/tree/lakefs_example.ipynb (@172.20.0.1) 0.40ms
+jupyterhub  | [I 2026-03-15 10:43:33.855 JupyterHub log:191] 302 GET /hub/user/admin/lab/tree/lakefs_example.ipynb -> /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Flab%2Ftree%2Flakefs_example.ipynb (@172.20.0.1) 0.34ms
+jupyterhub  | [I 2026-03-15 10:43:33.857 JupyterHub log:191] 200 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Flab%2Ftree%2Flakefs_example.ipynb (@172.20.0.1) 0.79ms
+jupyterhub  | [I 2026-03-15 10:43:39.877 JupyterHub base:837] User logged in: admin
+jupyterhub  | [I 2026-03-15 10:43:39.877 JupyterHub log:191] 302 POST /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Flab%2Ftree%2Flakefs_example.ipynb -> /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 9.67ms
+jupyterhub  | [W 2026-03-15 10:43:39.885 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 5.29ms
+jupyterhub  | [W 2026-03-15 10:43:41.613 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.53ms
+jupyterhub  | [W 2026-03-15 10:43:43.144 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.50ms
+jupyterhub  | [W 2026-03-15 10:43:44.553 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.47ms
+jupyterhub  | [W 2026-03-15 10:43:45.417 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.54ms
+jupyterhub  | [W 2026-03-15 10:43:46.647 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.52ms
+jupyterhub  | [W 2026-03-15 10:43:48.762 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.52ms
+jupyterhub  | [W 2026-03-15 10:43:50.157 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.44ms
+jupyterhub  | [W 2026-03-15 10:43:51.762 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.51ms
+jupyterhub  | [W 2026-03-15 10:43:52.609 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.51ms
+jupyterhub  | [W 2026-03-15 10:43:53.180 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.48ms
+jupyterhub  | [W 2026-03-15 10:44:31.193 JupyterHub log:191] 424 GET /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 1.92ms
+jupyterhub  | [I 2026-03-15 10:44:32.997 JupyterHub log:191] 302 GET /hub/login?next=%2Fhub%2Fuser%2Fadmin%2Flab%2Ftree%2Flakefs_example.ipynb -> /hub/user/admin/lab/tree/lakefs_example.ipynb (admin@172.20.0.1) 7.46ms
+jupyterhub  | [I 2026-03-15 10:44:38.105 JupyterHub log:191] 302 GET / -> /hub/ (@172.20.0.1) 0.38ms
+jupyterhub  | [I 2026-03-15 10:44:38.108 JupyterHub log:191] 302 GET /hub/ -> /hub/spawn (admin@172.20.0.1) 0.94ms
+jupyterhub  | [I 2026-03-15 10:44:38.126 JupyterHub provider:659] Creating oauth client jupyterhub-user-admin
+jupyterhub  | [I 2026-03-15 10:44:38.142 JupyterHub spawner:1689] Spawning jupyterhub-singleuser --allow-root
+jupyterhub  | [I 2026-03-15 10:44:39.112 JupyterHub log:191] 302 GET /hub/spawn -> /hub/spawn-pending/admin (admin@172.20.0.1) 1001.53ms
+jupyterhub  | [I 2026-03-15 10:44:39.117 JupyterHub pages:398] admin is pending spawn
+jupyterhub  | [I 2026-03-15 10:44:39.119 JupyterHub log:191] 200 GET /hub/spawn-pending/admin (admin@172.20.0.1) 3.76ms
+jupyterhub  | [I 2026-03-15 10:44:39.674 ServerApp] jupyter_lsp | extension was successfully linked.
+jupyterhub  | [I 2026-03-15 10:44:39.677 ServerApp] jupyter_server_terminals | extension was successfully linked.
+jupyterhub  | [I 2026-03-15 10:44:39.677 JupyterHubSingleUser] Starting jupyterhub single-user server extension version 4.0.2
+jupyterhub  | [I 2026-03-15 10:44:39.677 JupyterHubSingleUser] Using default url from environment $JUPYTERHUB_DEFAULT_URL: /lab
+jupyterhub  | [I 2026-03-15 10:44:39.678 ServerApp] jupyterhub | extension was successfully linked.
+jupyterhub  | [W 2026-03-15 10:44:39.679 LabApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+jupyterhub  | [I 2026-03-15 10:44:39.680 ServerApp] jupyterlab | extension was successfully linked.
+jupyterhub  | [W 2026-03-15 10:44:39.681 JupyterNotebookApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+jupyterhub  | [I 2026-03-15 10:44:39.682 ServerApp] notebook | extension was successfully linked.
+jupyterhub  | [I 2026-03-15 10:44:39.684 ServerApp] Writing Jupyter server cookie secret to /tmp/admin/.local/share/jupyter/runtime/jupyter_cookie_secret
+jupyterhub  | [I 2026-03-15 10:44:39.897 ServerApp] notebook_shim | extension was successfully linked.
+jupyterhub  | /usr/local/lib/python3.12/site-packages/jupyter_server/serverapp.py:2277: JupyterServerAuthWarning: Core endpoints without @allow_unauthenticated, @ws_authenticated, nor @web.authenticated:
+jupyterhub  | - GET of JupyterHubLogoutHandler registered for /user/admin/logout
+jupyterhub  | - GET of JupyterHubOAuthCallbackHandler registered for /user/admin/oauth_callback
+jupyterhub  |   self.web_app = ServerWebApplication(
+jupyterhub  | [I 2026-03-15 10:44:39.910 ServerApp] notebook_shim | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.911 ServerApp] jupyter_lsp | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.912 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.916 JupyterHub log:191] 200 GET /hub/api (@172.20.0.2) 0.36ms
+jupyterhub  | [I 2026-03-15 10:44:39.918 JupyterHubSingleUser] Updating Hub with activity every 300 seconds
+jupyterhub  | [I 2026-03-15 10:44:39.918 ServerApp] jupyterhub | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.922 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.12/site-packages/jupyterlab
+jupyterhub  | [I 2026-03-15 10:44:39.922 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+jupyterhub  | [I 2026-03-15 10:44:39.922 LabApp] Extension Manager is 'pypi'.
+jupyterhub  | [I 2026-03-15 10:44:39.924 ServerApp] jupyterlab | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.926 ServerApp] notebook | extension was successfully loaded.
+jupyterhub  | [I 2026-03-15 10:44:39.926 ServerApp] Serving notebooks from local directory: /tmp/admin
+jupyterhub  | [I 2026-03-15 10:44:39.926 ServerApp] Jupyter Server 2.17.0 is running at:
+jupyterhub  | [I 2026-03-15 10:44:39.926 ServerApp] http://127.0.0.1:60693/user/admin/lab?token=...
+jupyterhub  | [I 2026-03-15 10:44:39.926 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+jupyterhub  | [I 2026-03-15 10:44:39.948 JupyterHub log:191] 200 POST /hub/api/users/admin/activity (admin@172.20.0.2) 15.81ms
+jupyterhub  | [I 2026-03-15 10:44:40.007 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+jupyterhub  | [I 2026-03-15 10:44:40.582 ServerApp] 302 GET /user/admin/ -> /user/admin/lab? (@127.0.0.1) 0.31ms
+jupyterhub  | [W 2026-03-15 10:44:40.582 JupyterHub _version:37] Single-user server has no version header, which means it is likely < 0.8. Expected 4.0.2
+jupyterhub  | [I 2026-03-15 10:44:40.582 JupyterHub base:990] User admin took 2.471 seconds to start
+jupyterhub  | [I 2026-03-15 10:44:40.582 JupyterHub proxy:330] Adding user admin to proxy /user/admin/ => http://127.0.0.1:60693
+jupyterhub  | 2026-03-15T10:44:40.583Z [ConfigProxy] [32minfo[39m: Adding route /user/admin -> http://127.0.0.1:60693
+jupyterhub  | 2026-03-15T10:44:40.583Z [ConfigProxy] [32minfo[39m: Route added /user/admin -> http://127.0.0.1:60693
+jupyterhub  | 2026-03-15T10:44:40.583Z [ConfigProxy] [32minfo[39m: 201 POST /api/routes/user/admin 
+jupyterhub  | [I 2026-03-15 10:44:40.584 JupyterHub users:768] Server admin is ready
+jupyterhub  | [I 2026-03-15 10:44:40.584 JupyterHub log:191] 200 GET /hub/api/users/admin/server/progress?_xsrf=[secret] (admin@172.20.0.1) 1447.29ms
+jupyterhub  | [I 2026-03-15 10:44:40.590 JupyterHub log:191] 302 GET /hub/spawn-pending/admin -> /user/admin/ (admin@172.20.0.1) 1.28ms
+jupyterhub  | [I 2026-03-15 10:44:40.593 ServerApp] 302 GET /user/admin/ -> /user/admin/lab? (@172.20.0.1) 0.30ms
+jupyterhub  | [I 2026-03-15 10:44:40.595 ServerApp] 302 GET /user/admin/lab -> /hub/api/oauth2/authorize?client_id=jupyterhub-user-admin&redirect_uri=%2Fuser%2Fadmin%2Foauth_callback&response_type=code&state=[secret] (@172.20.0.1) 0.89ms
+jupyterhub  | [I 2026-03-15 10:44:40.607 JupyterHub log:191] 302 GET /hub/api/oauth2/authorize?client_id=jupyterhub-user-admin&redirect_uri=%2Fuser%2Fadmin%2Foauth_callback&response_type=code&state=[secret] -> /user/admin/oauth_callback?code=[secret]&state=[secret] (admin@172.20.0.1) 10.30ms
+jupyterhub  | [I 2026-03-15 10:44:40.627 JupyterHub log:191] 200 POST /hub/api/oauth2/token (admin@172.20.0.2) 16.25ms
+jupyterhub  | [I 2026-03-15 10:44:40.635 JupyterHub log:191] 200 GET /hub/api/user (admin@172.20.0.2) 6.29ms
+jupyterhub  | [I 2026-03-15 10:44:40.635 ServerApp] Logged-in user {'groups': [], 'kind': 'user', 'admin': True, 'name': 'admin', 'session_id': '8886f5cc83704e4898910e65aebc5b57', 'scopes': ['access:servers!server=admin/', 'read:users:groups!user=admin', 'read:users:name!user=admin']}
+jupyterhub  | [I 2026-03-15 10:44:40.636 ServerApp] 302 GET /user/admin/oauth_callback?code=[secret]&state=[secret] -> /user/admin/lab (@172.20.0.1) 25.39ms
+jupyterhub  | [I 2026-03-15 10:44:40.642 ServerApp] 200 GET /user/admin/lab (admin@172.20.0.1) 4.28ms
+jupyterhub  | [I 2026-03-15 10:44:40.788 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571480779 (admin@172.20.0.1) 6.95ms
+jupyterhub  | [I 2026-03-15 10:44:40.789 ServerApp] 200 GET /user/admin/api/me?1773571480779 (admin@172.20.0.1) 0.97ms
+jupyterhub  | [I 2026-03-15 10:44:40.790 ServerApp] 200 GET /user/admin/api/kernels?1773571480784 (admin@172.20.0.1) 1.83ms
+jupyterhub  | [I 2026-03-15 10:44:40.791 ServerApp] 200 GET /user/admin/api/sessions?1773571480785 (admin@172.20.0.1) 2.19ms
+jupyterhub  | [I 2026-03-15 10:44:40.791 ServerApp] 200 GET /user/admin/api/terminals?1773571480785 (admin@172.20.0.1) 2.40ms
+jupyterhub  | [I 2026-03-15 10:44:40.837 ServerApp] 200 GET /user/admin/lab/api/settings?1773571480781 (admin@172.20.0.1) 47.81ms
+jupyterhub  | [I 2026-03-15 10:44:40.840 ServerApp] 101 GET /user/admin/api/events/subscribe?token=[secret] (admin@172.20.0.1) 1.67ms
+jupyterhub  | [I 2026-03-15 10:44:40.842 ServerApp] 200 GET /user/admin/api/me?1773571480791 (admin@172.20.0.1) 3.67ms
+jupyterhub  | [I 2026-03-15 10:44:40.843 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571480790 (admin@172.20.0.1) 4.59ms
+jupyterhub  | [I 2026-03-15 10:44:41.898 ServerApp] 200 GET /user/admin/lab/api/translations/default?1773571481888 (admin@172.20.0.1) 6.65ms
+jupyterhub  | [I 2026-03-15 10:44:41.909 ServerApp] 200 GET /user/admin/api/config/jupyterlabapputilsextensionannouncements?1773571481906 (admin@172.20.0.1) 1.06ms
+jupyterhub  | [I 2026-03-15 10:44:41.951 ServerApp] 200 GET /user/admin/lsp/status?1773571481947 (admin@172.20.0.1) 1.68ms
+jupyterhub  | [I 2026-03-15 10:44:41.971 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571481962 (admin@172.20.0.1) 7.03ms
+jupyterhub  | [I 2026-03-15 10:44:41.977 ServerApp] 200 GET /user/admin/lab/api/translations?1773571481959 (admin@172.20.0.1) 16.95ms
+jupyterhub  | [I 2026-03-15 10:44:41.996 ServerApp] 200 GET /user/admin/lab/api/settings/@jupyterlab/codemirror-extension:plugin?1773571481993 (admin@172.20.0.1) 1.71ms
+jupyterhub  | [I 2026-03-15 10:44:42.000 ServerApp] 200 GET /user/admin/lab/api/settings/@jupyterlab/notebook-extension:panel?1773571481996 (admin@172.20.0.1) 1.89ms
+jupyterhub  | [I 2026-03-15 10:44:42.011 ServerApp] 200 GET /user/admin/lab/api/workspaces/default?1773571482009 (admin@172.20.0.1) 0.65ms
+jupyterhub  | [I 2026-03-15 10:44:42.029 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571482026 (admin@172.20.0.1) 1.65ms
+jupyterhub  | [I 2026-03-15 10:44:42.040 ServerApp] 200 GET /user/admin/lab/api/settings?ids_only=true&1773571482036 (admin@172.20.0.1) 2.71ms
+jupyterhub  | [I 2026-03-15 10:44:42.090 LabApp] Build is up to date
+jupyterhub  | [I 2026-03-15 10:44:42.090 ServerApp] 200 GET /user/admin/lab/api/build?1773571481915 (admin@172.20.0.1) 173.56ms
+jupyterhub  | [I 2026-03-15 10:44:42.569 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571482564 (admin@172.20.0.1) 1.63ms
+jupyterhub  | [I 2026-03-15 10:44:42.576 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571482573 (admin@172.20.0.1) 1.73ms
+jupyterhub  | [I 2026-03-15 10:44:43.145 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571483101 (admin@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:44:45.215 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571485210 (admin@172.20.0.1) 2.02ms
+jupyterhub  | [I 2026-03-15 10:44:50.677 ServerApp] Creating new notebook in 
+jupyterhub  | [I 2026-03-15 10:44:50.708 ServerApp] Writing notebook-signing key to /tmp/admin/.local/share/jupyter/notebook_secret
+jupyterhub  | [I 2026-03-15 10:44:50.717 ServerApp] 201 POST /user/admin/api/contents?1773571490632 (admin@172.20.0.1) 40.34ms
+jupyterhub  | [I 2026-03-15 10:44:50.721 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb?content=0&1773571490718 (admin@172.20.0.1) 0.81ms
+jupyterhub  | [I 2026-03-15 10:44:50.724 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571490718 (admin@172.20.0.1) 1.81ms
+jupyterhub  | [I 2026-03-15 10:44:50.746 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb?type=notebook&content=1&1773571490735 (admin@172.20.0.1) 8.62ms
+jupyterhub  | [I 2026-03-15 10:44:50.909 ServerApp] 200 GET /user/admin/api/sessions?1773571490799 (admin@172.20.0.1) 2.34ms
+jupyterhub  | [I 2026-03-15 10:44:50.911 ServerApp] 200 GET /user/admin/api/kernels?1773571490799 (admin@172.20.0.1) 3.58ms
+jupyterhub  | [I 2026-03-15 10:44:50.914 ServerApp] 200 GET /user/admin/api/terminals?1773571490799 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:44:50.914 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb/checkpoints?1773571490762 (admin@172.20.0.1) 7.07ms
+jupyterhub  | [I 2026-03-15 10:44:50.914 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb/checkpoints?1773571490762 (admin@172.20.0.1) 7.16ms
+jupyterhub  | [I 2026-03-15 10:44:50.915 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb/checkpoints?1773571490765 (admin@172.20.0.1) 7.30ms
+jupyterhub  | [I 2026-03-15 10:44:50.921 ServerApp] 200 GET /user/admin/api/sessions?1773571490917 (admin@172.20.0.1) 0.66ms
+jupyterhub  | [I 2026-03-15 10:44:51.015 ServerApp] Kernel started: 6452ffd9-cf80-414f-9831-f899316b0393
+jupyterhub  | [I 2026-03-15 10:44:51.018 ServerApp] 201 POST /user/admin/api/sessions?1773571490922 (admin@172.20.0.1) 49.33ms
+jupyterhub  | [I 2026-03-15 10:44:51.024 ServerApp] 200 GET /user/admin/api/sessions?1773571491019 (admin@172.20.0.1) 2.34ms
+jupyterhub  | [I 2026-03-15 10:44:51.030 ServerApp] 200 GET /user/admin/api/kernels?1773571491026 (admin@172.20.0.1) 0.87ms
+jupyterhub  | [I 2026-03-15 10:44:51.070 ServerApp] 200 PATCH /user/admin/api/sessions/b73be107-db55-4789-b34b-6eee77391ffa?1773571491026 (admin@172.20.0.1) 1.57ms
+jupyterhub  | [I 2026-03-15 10:44:51.075 ServerApp] 200 GET /user/admin/api/sessions?1773571491071 (admin@172.20.0.1) 0.95ms
+jupyterhub  | [I 2026-03-15 10:44:51.109 ServerApp] 200 GET /user/admin/api/nbconvert?1773571490740 (admin@172.20.0.1) 362.63ms
+jupyterhub  | [I 2026-03-15 10:44:51.117 ServerApp] 200 PATCH /user/admin/api/sessions/b73be107-db55-4789-b34b-6eee77391ffa?1773571491071 (admin@172.20.0.1) 0.79ms
+jupyterhub  | [I 2026-03-15 10:44:51.120 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571491117 (admin@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:44:51.373 ServerApp] Adapting from protocol version 5.3 (kernel 6452ffd9-cf80-414f-9831-f899316b0393) to 5.4 (client).
+jupyterhub  | [I 2026-03-15 10:44:51.373 ServerApp] Adapting from protocol version 5.3 (kernel 6452ffd9-cf80-414f-9831-f899316b0393) to 5.4 (client).
+jupyterhub  | [I 2026-03-15 10:44:51.373 ServerApp] 101 GET /user/admin/api/kernels/6452ffd9-cf80-414f-9831-f899316b0393/channels?session_id=e3b99a57-4616-4b6b-84e0-64e4ca128198 (admin@172.20.0.1) 342.64ms
+jupyterhub  | [I 2026-03-15 10:44:51.374 ServerApp] Connecting to kernel 6452ffd9-cf80-414f-9831-f899316b0393.
+jupyterhub  | [I 2026-03-15 10:44:51.374 ServerApp] 101 GET /user/admin/api/kernels/6452ffd9-cf80-414f-9831-f899316b0393/channels?session_id=994db563-329b-403f-b8f3-b03855f39916 (admin@172.20.0.1) 41.76ms
+jupyterhub  | [I 2026-03-15 10:44:51.375 ServerApp] Connecting to kernel 6452ffd9-cf80-414f-9831-f899316b0393.
+jupyterhub  | [W 2026-03-15 10:44:51.375 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+jupyterhub  |     Setting websocket_ping_timeout=30000
+jupyterhub  | [I 2026-03-15 10:44:51.399 ServerApp] Adapting from protocol version 5.3 (kernel 6452ffd9-cf80-414f-9831-f899316b0393) to 5.4 (client).
+jupyterhub  | [I 2026-03-15 10:44:51.400 ServerApp] 101 GET /user/admin/api/kernels/6452ffd9-cf80-414f-9831-f899316b0393/channels?session_id=d29cbc88-618d-4d0c-aa3e-6eb6368c9656 (admin@172.20.0.1) 1.21ms
+jupyterhub  | [I 2026-03-15 10:44:51.400 ServerApp] Connecting to kernel 6452ffd9-cf80-414f-9831-f899316b0393.
+jupyterhub  | [I 2026-03-15 10:44:51.470 ServerApp] 200 GET /user/admin/api/sessions?1773571491467 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:44:51.471 ServerApp] 200 GET /user/admin/api/kernels?1773571491468 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:44:51.677 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571491632 (admin@172.20.0.1) 0.77ms
+jupyterhub  | [I 2026-03-15 10:45:00.774 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571500764 (admin@172.20.0.1) 2.99ms
+jupyterhub  | [I 2026-03-15 10:45:00.936 ServerApp] 200 GET /user/admin/api/terminals?1773571500932 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:45:01.485 ServerApp] 200 GET /user/admin/api/sessions?1773571501481 (admin@172.20.0.1) 0.65ms
+jupyterhub  | [I 2026-03-15 10:45:01.486 ServerApp] 200 GET /user/admin/api/kernels?1773571501482 (admin@172.20.0.1) 0.45ms
+jupyterhub  | [I 2026-03-15 10:45:10.795 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571510790 (admin@172.20.0.1) 2.26ms
+jupyterhub  | [I 2026-03-15 10:45:10.943 ServerApp] 200 GET /user/admin/api/terminals?1773571510943 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:45:11.490 ServerApp] 200 GET /user/admin/api/sessions?1773571511489 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [I 2026-03-15 10:45:11.492 ServerApp] 200 GET /user/admin/api/kernels?1773571511489 (admin@172.20.0.1) 0.48ms
+jupyterhub  | [I 2026-03-15 10:45:20.810 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571520805 (admin@172.20.0.1) 2.17ms
+jupyterhub  | [I 2026-03-15 10:45:20.961 ServerApp] 200 GET /user/admin/api/terminals?1773571520960 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:45:21.509 ServerApp] 200 GET /user/admin/api/sessions?1773571521507 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:45:21.512 ServerApp] 200 GET /user/admin/api/kernels?1773571521507 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:45:30.834 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571530829 (admin@172.20.0.1) 1.93ms
+jupyterhub  | [I 2026-03-15 10:45:30.966 ServerApp] 200 GET /user/admin/api/terminals?1773571530965 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:45:31.531 ServerApp] 200 GET /user/admin/api/sessions?1773571531529 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:45:31.535 ServerApp] 200 GET /user/admin/api/kernels?1773571531530 (admin@172.20.0.1) 0.47ms
+jupyterhub  | [I 2026-03-15 10:45:40.853 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571540847 (admin@172.20.0.1) 2.60ms
+jupyterhub  | [I 2026-03-15 10:45:40.979 ServerApp] 200 GET /user/admin/api/terminals?1773571540977 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:45:41.544 ServerApp] 200 GET /user/admin/api/sessions?1773571541540 (admin@172.20.0.1) 0.65ms
+jupyterhub  | [I 2026-03-15 10:45:41.548 ServerApp] 200 GET /user/admin/api/kernels?1773571541540 (admin@172.20.0.1) 0.45ms
+jupyterhub  | [I 2026-03-15 10:45:41.903 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571541900 (admin@172.20.0.1) 0.81ms
+jupyterhub  | [I 2026-03-15 10:45:41.903 ServerApp] 200 GET /user/admin/api/me?1773571541900 (admin@172.20.0.1) 0.38ms
+jupyterhub  | [I 2026-03-15 10:45:50.874 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571550866 (admin@172.20.0.1) 2.25ms
+jupyterhub  | [I 2026-03-15 10:45:50.997 ServerApp] 200 GET /user/admin/api/terminals?1773571550995 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:45:51.564 ServerApp] 200 GET /user/admin/api/sessions?1773571551561 (admin@172.20.0.1) 0.65ms
+jupyterhub  | [I 2026-03-15 10:45:51.570 ServerApp] 200 GET /user/admin/api/kernels?1773571551561 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [I 2026-03-15 10:46:00.888 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571560881 (admin@172.20.0.1) 2.19ms
+jupyterhub  | [I 2026-03-15 10:46:01.020 ServerApp] 200 GET /user/admin/api/terminals?1773571561015 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:46:01.586 ServerApp] 200 GET /user/admin/api/sessions?1773571561582 (admin@172.20.0.1) 0.62ms
+jupyterhub  | [I 2026-03-15 10:46:01.590 ServerApp] 200 GET /user/admin/api/kernels?1773571561582 (admin@172.20.0.1) 0.65ms
+jupyterhub  | [I 2026-03-15 10:46:10.903 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571570897 (admin@172.20.0.1) 2.04ms
+jupyterhub  | [I 2026-03-15 10:46:11.033 ServerApp] 200 GET /user/admin/api/terminals?1773571571030 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:46:11.599 ServerApp] 200 GET /user/admin/api/sessions?1773571571596 (admin@172.20.0.1) 0.62ms
+jupyterhub  | [I 2026-03-15 10:46:11.605 ServerApp] 200 GET /user/admin/api/kernels?1773571571596 (admin@172.20.0.1) 0.48ms
+jupyterhub  | [I 2026-03-15 10:46:20.923 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571580915 (admin@172.20.0.1) 2.21ms
+jupyterhub  | [I 2026-03-15 10:46:21.053 ServerApp] 200 GET /user/admin/api/terminals?1773571581050 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:46:21.617 ServerApp] 200 GET /user/admin/api/sessions?1773571581614 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:46:21.618 ServerApp] 200 GET /user/admin/api/kernels?1773571581614 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:46:30.938 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571590931 (admin@172.20.0.1) 2.02ms
+jupyterhub  | [I 2026-03-15 10:46:31.067 ServerApp] 200 GET /user/admin/api/terminals?1773571591064 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:46:31.634 ServerApp] 200 GET /user/admin/api/sessions?1773571591631 (admin@172.20.0.1) 0.77ms
+jupyterhub  | [I 2026-03-15 10:46:31.638 ServerApp] 200 GET /user/admin/api/kernels?1773571591631 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:46:40.954 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571600946 (admin@172.20.0.1) 2.18ms
+jupyterhub  | [I 2026-03-15 10:46:41.083 ServerApp] 200 GET /user/admin/api/terminals?1773571601081 (admin@172.20.0.1) 0.49ms
+jupyterhub  | [I 2026-03-15 10:46:41.639 ServerApp] 200 GET /user/admin/api/sessions?1773571601636 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:46:41.643 ServerApp] 200 GET /user/admin/api/kernels?1773571601640 (admin@172.20.0.1) 0.45ms
+jupyterhub  | [I 2026-03-15 10:46:42.915 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571602912 (admin@172.20.0.1) 0.83ms
+jupyterhub  | [I 2026-03-15 10:46:42.918 ServerApp] 200 GET /user/admin/api/me?1773571602913 (admin@172.20.0.1) 0.46ms
+jupyterhub  | [I 2026-03-15 10:46:50.772 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb?content=0&1773571610765 (admin@172.20.0.1) 0.86ms
+jupyterhub  | [I 2026-03-15 10:46:50.818 ServerApp] Saving file at /Untitled.ipynb
+jupyterhub  | [I 2026-03-15 10:46:50.827 ServerApp] 200 PUT /user/admin/api/contents/Untitled.ipynb?1773571610774 (admin@172.20.0.1) 9.61ms
+jupyterhub  | [I 2026-03-15 10:46:50.831 ServerApp] 200 GET /user/admin/api/contents/Untitled.ipynb/checkpoints?1773571610828 (admin@172.20.0.1) 0.90ms
+jupyterhub  | [I 2026-03-15 10:46:50.836 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571610829 (admin@172.20.0.1) 2.10ms
+jupyterhub  | [I 2026-03-15 10:46:51.095 ServerApp] 200 GET /user/admin/api/terminals?1773571611092 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:46:51.653 ServerApp] 200 GET /user/admin/api/sessions?1773571611647 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:46:51.657 ServerApp] 200 GET /user/admin/api/kernels?1773571611647 (admin@172.20.0.1) 0.43ms
+jupyterhub  | [I 2026-03-15 10:47:00.850 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571620843 (admin@172.20.0.1) 2.37ms
+jupyterhub  | [I 2026-03-15 10:47:01.105 ServerApp] 200 GET /user/admin/api/terminals?1773571621101 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:47:01.295 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571621290 (admin@172.20.0.1) 2.33ms
+jupyterhub  | [I 2026-03-15 10:47:01.342 ServerApp] Uploading file to /jupyterhub_config.py
+jupyterhub  | [I 2026-03-15 10:47:01.345 ServerApp] 201 PUT /user/admin/api/contents/jupyterhub_config.py?1773571621298 (admin@172.20.0.1) 4.00ms
+jupyterhub  | [I 2026-03-15 10:47:01.350 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571621345 (admin@172.20.0.1) 2.43ms
+jupyterhub  | [I 2026-03-15 10:47:01.665 ServerApp] 200 GET /user/admin/api/sessions?1773571621662 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [I 2026-03-15 10:47:01.668 ServerApp] 200 GET /user/admin/api/kernels?1773571621662 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:47:05.548 ServerApp] 200 GET /user/admin/api/contents/jupyterhub_config.py?type=file&content=1&format=text&1773571625545 (admin@172.20.0.1) 1.51ms
+jupyterhub  | [I 2026-03-15 10:47:05.554 ServerApp] 200 GET /user/admin/api/sessions?1773571625551 (admin@172.20.0.1) 0.66ms
+jupyterhub  | [I 2026-03-15 10:47:05.557 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571625551 (admin@172.20.0.1) 4.51ms
+jupyterhub  | [I 2026-03-15 10:47:05.565 ServerApp] 200 GET /user/admin/api/contents/jupyterhub_config.py/checkpoints?1773571625563 (admin@172.20.0.1) 0.63ms
+jupyterhub  | [I 2026-03-15 10:47:05.566 ServerApp] 200 GET /user/admin/api/contents/jupyterhub_config.py/checkpoints?1773571625564 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:47:05.570 ServerApp] 200 GET /user/admin/api/contents/jupyterhub_config.py/checkpoints?1773571625568 (admin@172.20.0.1) 0.69ms
+jupyterhub  | [I 2026-03-15 10:47:05.577 ServerApp] 201 POST /user/admin/api/contents/jupyterhub_config.py/checkpoints?1773571625575 (admin@172.20.0.1) 1.71ms
+jupyterhub  | [I 2026-03-15 10:47:05.581 ServerApp] 200 GET /user/admin/api/sessions?1773571625579 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:47:06.104 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571626060 (admin@172.20.0.1) 0.82ms
+jupyterhub  | [I 2026-03-15 10:47:09.940 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571629894 (admin@172.20.0.1) 0.68ms
+jupyterhub  | [I 2026-03-15 10:47:11.118 ServerApp] 200 GET /user/admin/api/terminals?1773571631113 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:47:11.674 ServerApp] 200 GET /user/admin/api/kernels?1773571631672 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:47:15.580 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571635573 (admin@172.20.0.1) 4.81ms
+jupyterhub  | [I 2026-03-15 10:47:15.586 ServerApp] 200 GET /user/admin/api/sessions?1773571635583 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:47:17.796 ServerApp] 200 GET /user/admin/api/sessions?1773571637793 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [W 2026-03-15 10:47:17.800 ServerApp] delete /jupyterhub_config.py
+jupyterhub  | [I 2026-03-15 10:47:17.801 ServerApp] 204 DELETE /user/admin/api/contents/jupyterhub_config.py?1773571637798 (admin@172.20.0.1) 1.57ms
+jupyterhub  | [I 2026-03-15 10:47:17.805 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571637802 (admin@172.20.0.1) 1.75ms
+jupyterhub  | [I 2026-03-15 10:47:21.133 ServerApp] 200 GET /user/admin/api/terminals?1773571641130 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:47:21.686 ServerApp] 200 GET /user/admin/api/kernels?1773571641683 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:47:25.594 ServerApp] 200 GET /user/admin/api/sessions?1773571645591 (admin@172.20.0.1) 0.74ms
+jupyterhub  | [I 2026-03-15 10:47:27.816 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571647811 (admin@172.20.0.1) 2.17ms
+jupyterhub  | [I 2026-03-15 10:47:28.723 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571648718 (admin@172.20.0.1) 2.40ms
+jupyterhub  | [I 2026-03-15 10:47:28.768 ServerApp] Uploading file to /lakefs_example_notebook.ipynb
+jupyterhub  | [I 2026-03-15 10:47:28.772 ServerApp] 201 PUT /user/admin/api/contents/lakefs_example_notebook.ipynb?1773571648725 (admin@172.20.0.1) 4.53ms
+jupyterhub  | [I 2026-03-15 10:47:28.777 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571648773 (admin@172.20.0.1) 2.09ms
+jupyterhub  | [I 2026-03-15 10:47:31.139 ServerApp] 200 GET /user/admin/api/terminals?1773571651134 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:47:31.696 ServerApp] 200 GET /user/admin/api/kernels?1773571651693 (admin@172.20.0.1) 0.54ms
+jupyterhub  | /usr/local/lib/python3.12/site-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+jupyterhub  |   validate(nb)
+jupyterhub  | [W 2026-03-15 10:47:31.713 ServerApp] Notebook lakefs_example_notebook.ipynb is not trusted
+jupyterhub  | [I 2026-03-15 10:47:31.713 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb?type=notebook&content=1&1773571651708 (admin@172.20.0.1) 2.74ms
+jupyterhub  | [I 2026-03-15 10:47:31.720 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571651715 (admin@172.20.0.1) 3.18ms
+jupyterhub  | [I 2026-03-15 10:47:31.733 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb/checkpoints?1773571651730 (admin@172.20.0.1) 0.73ms
+jupyterhub  | [I 2026-03-15 10:47:31.734 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb/checkpoints?1773571651730 (admin@172.20.0.1) 1.16ms
+jupyterhub  | [I 2026-03-15 10:47:31.753 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb/checkpoints?1773571651750 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:47:31.834 ServerApp] 201 POST /user/admin/api/contents/lakefs_example_notebook.ipynb/checkpoints?1773571651830 (admin@172.20.0.1) 1.58ms
+jupyterhub  | [I 2026-03-15 10:47:31.837 ServerApp] 200 GET /user/admin/api/sessions?1773571651835 (admin@172.20.0.1) 0.48ms
+jupyterhub  | [I 2026-03-15 10:47:31.893 ServerApp] Kernel started: 1fddf2e6-20a6-485e-8c93-8f0cd0235e43
+jupyterhub  | [I 2026-03-15 10:47:31.894 ServerApp] 201 POST /user/admin/api/sessions?1773571651837 (admin@172.20.0.1) 14.54ms
+jupyterhub  | [I 2026-03-15 10:47:31.898 ServerApp] 200 GET /user/admin/api/sessions?1773571651895 (admin@172.20.0.1) 0.47ms
+jupyterhub  | [I 2026-03-15 10:47:31.906 ServerApp] 200 GET /user/admin/api/kernels?1773571651901 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:47:31.948 ServerApp] 200 PATCH /user/admin/api/sessions/08f6b4c8-ab26-411e-aa73-aed15bdf8cef?1773571651900 (admin@172.20.0.1) 0.75ms
+jupyterhub  | [I 2026-03-15 10:47:31.951 ServerApp] 200 GET /user/admin/api/sessions?1773571651949 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:47:31.992 ServerApp] 200 PATCH /user/admin/api/sessions/08f6b4c8-ab26-411e-aa73-aed15bdf8cef?1773571651948 (admin@172.20.0.1) 0.72ms
+jupyterhub  | [I 2026-03-15 10:47:31.996 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571651993 (admin@172.20.0.1) 0.73ms
+jupyterhub  | [I 2026-03-15 10:47:32.161 ServerApp] Adapting from protocol version 5.3 (kernel 1fddf2e6-20a6-485e-8c93-8f0cd0235e43) to 5.4 (client).
+jupyterhub  | [I 2026-03-15 10:47:32.161 ServerApp] 101 GET /user/admin/api/kernels/1fddf2e6-20a6-485e-8c93-8f0cd0235e43/channels?session_id=49342f44-e099-49a5-bc74-964fe1c640a2 (admin@172.20.0.1) 255.04ms
+jupyterhub  | [I 2026-03-15 10:47:32.161 ServerApp] Connecting to kernel 1fddf2e6-20a6-485e-8c93-8f0cd0235e43.
+jupyterhub  | [I 2026-03-15 10:47:32.556 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571652511 (admin@172.20.0.1) 0.70ms
+jupyterhub  | [I 2026-03-15 10:47:41.162 ServerApp] 200 GET /user/admin/api/terminals?1773571661156 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:47:41.836 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571661831 (admin@172.20.0.1) 2.96ms
+jupyterhub  | [I 2026-03-15 10:47:41.914 ServerApp] 200 GET /user/admin/api/kernels?1773571661912 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:47:41.963 ServerApp] 200 GET /user/admin/api/sessions?1773571661961 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:47:43.932 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571663928 (admin@172.20.0.1) 0.96ms
+jupyterhub  | [I 2026-03-15 10:47:43.934 ServerApp] 200 GET /user/admin/api/me?1773571663929 (admin@172.20.0.1) 0.44ms
+jupyterhub  | [I 2026-03-15 10:47:45.611 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571665606 (admin@172.20.0.1) 3.04ms
+jupyterhub  | [I 2026-03-15 10:47:51.183 ServerApp] 200 GET /user/admin/api/terminals?1773571671179 (admin@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:47:51.925 ServerApp] 200 GET /user/admin/api/kernels?1773571671922 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:47:51.982 ServerApp] 200 GET /user/admin/api/sessions?1773571671979 (admin@172.20.0.1) 1.09ms
+jupyterhub  | [I 2026-03-15 10:47:55.633 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571675627 (admin@172.20.0.1) 2.85ms
+jupyterhub  | [I 2026-03-15 10:48:01.195 ServerApp] 200 GET /user/admin/api/terminals?1773571681190 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:48:01.932 ServerApp] 200 GET /user/admin/api/kernels?1773571681929 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:48:01.999 ServerApp] 200 GET /user/admin/api/sessions?1773571681996 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:48:05.650 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571685645 (admin@172.20.0.1) 3.27ms
+jupyterhub  | [I 2026-03-15 10:48:11.213 ServerApp] 200 GET /user/admin/api/terminals?1773571691209 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:48:11.939 ServerApp] 200 GET /user/admin/api/kernels?1773571691936 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:48:12.005 ServerApp] 200 GET /user/admin/api/sessions?1773571692003 (admin@172.20.0.1) 0.59ms
+jupyterhub  | 2026-03-15T10:48:14.164Z [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+jupyterhub  | [I 2026-03-15 10:48:15.666 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571695660 (admin@172.20.0.1) 2.95ms
+jupyterhub  | [I 2026-03-15 10:48:16.737 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571696731 (admin@172.20.0.1) 2.94ms
+jupyterhub  | [I 2026-03-15 10:48:16.801 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571696796 (admin@172.20.0.1) 2.61ms
+jupyterhub  | [I 2026-03-15 10:48:19.573 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571699568 (admin@172.20.0.1) 2.78ms
+jupyterhub  | [I 2026-03-15 10:48:19.651 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571699646 (admin@172.20.0.1) 2.77ms
+jupyterhub  | [I 2026-03-15 10:48:21.228 ServerApp] 200 GET /user/admin/api/terminals?1773571701225 (admin@172.20.0.1) 0.63ms
+jupyterhub  | [I 2026-03-15 10:48:21.952 ServerApp] 200 GET /user/admin/api/kernels?1773571701949 (admin@172.20.0.1) 0.62ms
+jupyterhub  | [I 2026-03-15 10:48:22.015 ServerApp] 200 GET /user/admin/api/sessions?1773571702012 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:48:29.669 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571709659 (admin@172.20.0.1) 3.23ms
+jupyterhub  | [I 2026-03-15 10:48:31.250 ServerApp] 200 GET /user/admin/api/terminals?1773571711245 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:48:31.970 ServerApp] 200 GET /user/admin/api/kernels?1773571711962 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:48:32.024 ServerApp] 200 GET /user/admin/api/sessions?1773571712020 (admin@172.20.0.1) 0.63ms
+jupyterhub  | [I 2026-03-15 10:48:39.686 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571719678 (admin@172.20.0.1) 2.89ms
+jupyterhub  | [I 2026-03-15 10:48:41.255 ServerApp] 200 GET /user/admin/api/terminals?1773571721252 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:48:41.978 ServerApp] 200 GET /user/admin/api/kernels?1773571721976 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:48:42.041 ServerApp] 200 GET /user/admin/api/sessions?1773571722039 (admin@172.20.0.1) 0.49ms
+jupyterhub  | [I 2026-03-15 10:48:43.686 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571723680 (admin@172.20.0.1) 3.38ms
+jupyterhub  | [I 2026-03-15 10:48:44.940 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571724937 (admin@172.20.0.1) 0.86ms
+jupyterhub  | [I 2026-03-15 10:48:44.944 ServerApp] 200 GET /user/admin/api/me?1773571724937 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:48:45.042 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571725036 (admin@172.20.0.1) 3.49ms
+jupyterhub  | [I 2026-03-15 10:48:51.264 ServerApp] 200 GET /user/admin/api/terminals?1773571731259 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:48:51.989 ServerApp] 200 GET /user/admin/api/kernels?1773571731987 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:48:52.046 ServerApp] 200 GET /user/admin/api/sessions?1773571732044 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:48:55.055 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571735049 (admin@172.20.0.1) 3.34ms
+jupyterhub  | [I 2026-03-15 10:48:56.516 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571736510 (admin@172.20.0.1) 2.76ms
+jupyterhub  | [I 2026-03-15 10:49:01.284 ServerApp] 200 GET /user/admin/api/terminals?1773571741278 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:49:01.996 ServerApp] 200 GET /user/admin/api/kernels?1773571741993 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:49:02.055 ServerApp] 200 GET /user/admin/api/sessions?1773571742052 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:49:05.044 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571745039 (admin@172.20.0.1) 2.90ms
+jupyterhub  | [I 2026-03-15 10:49:05.116 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571745112 (admin@172.20.0.1) 2.88ms
+jupyterhub  | [I 2026-03-15 10:49:10.069 JupyterHub log:191] 200 POST /hub/api/users/admin/activity (admin@172.20.0.2) 15.76ms
+jupyterhub  | [I 2026-03-15 10:49:11.301 ServerApp] 200 GET /user/admin/api/terminals?1773571751294 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:49:11.419 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571751413 (admin@172.20.0.1) 3.12ms
+jupyterhub  | [I 2026-03-15 10:49:12.001 ServerApp] 200 GET /user/admin/api/kernels?1773571751999 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:49:12.060 ServerApp] 200 GET /user/admin/api/sessions?1773571752058 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:49:21.315 ServerApp] 200 GET /user/admin/api/terminals?1773571761309 (admin@172.20.0.1) 0.66ms
+jupyterhub  | [I 2026-03-15 10:49:21.441 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571761436 (admin@172.20.0.1) 2.47ms
+jupyterhub  | [I 2026-03-15 10:49:22.008 ServerApp] 200 GET /user/admin/api/kernels?1773571762005 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:49:22.078 ServerApp] 200 GET /user/admin/api/sessions?1773571762075 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:49:26.772 ServerApp] 204 PUT /user/admin/lab/api/settings/@jupyterlab/apputils-extension:notification?1773571766723 (admin@172.20.0.1) 2.90ms
+jupyterhub  | [I 2026-03-15 10:49:26.777 ServerApp] 200 GET /user/admin/lab/api/settings/@jupyterlab/apputils-extension:notification?1773571766773 (admin@172.20.0.1) 2.28ms
+jupyterhub  | [I 2026-03-15 10:49:31.331 ServerApp] 200 GET /user/admin/api/terminals?1773571771326 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:49:31.450 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571771443 (admin@172.20.0.1) 2.62ms
+jupyterhub  | [I 2026-03-15 10:49:31.748 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb?content=0&1773571771744 (admin@172.20.0.1) 0.87ms
+jupyterhub  | [I 2026-03-15 10:49:31.806 ServerApp] Saving file at /lakefs_example_notebook.ipynb
+jupyterhub  | [I 2026-03-15 10:49:31.817 ServerApp] 200 PUT /user/admin/api/contents/lakefs_example_notebook.ipynb?1773571771759 (admin@172.20.0.1) 11.71ms
+jupyterhub  | [I 2026-03-15 10:49:31.821 ServerApp] 200 GET /user/admin/api/contents/lakefs_example_notebook.ipynb/checkpoints?1773571771818 (admin@172.20.0.1) 0.97ms
+jupyterhub  | [I 2026-03-15 10:49:31.824 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571771818 (admin@172.20.0.1) 2.21ms
+jupyterhub  | [I 2026-03-15 10:49:32.014 ServerApp] 200 GET /user/admin/api/kernels?1773571772010 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:49:32.083 ServerApp] 200 GET /user/admin/api/sessions?1773571772080 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:49:33.945 ServerApp] 200 GET /user/admin/api/sessions?1773571773944 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:49:33.948 ServerApp] Kernel shutdown: 6452ffd9-cf80-414f-9831-f899316b0393
+jupyterhub  | [I 2026-03-15 10:49:34.060 ServerApp] 204 DELETE /user/admin/api/sessions/b73be107-db55-4789-b34b-6eee77391ffa?1773571773948 (admin@172.20.0.1) 112.79ms
+jupyterhub  | [I 2026-03-15 10:49:34.064 ServerApp] 200 GET /user/admin/api/sessions?1773571774063 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [W 2026-03-15 10:49:34.068 ServerApp] delete /Untitled.ipynb
+jupyterhub  | [I 2026-03-15 10:49:34.069 ServerApp] 204 DELETE /user/admin/api/contents/Untitled.ipynb?1773571774068 (admin@172.20.0.1) 1.66ms
+jupyterhub  | [I 2026-03-15 10:49:34.070 ServerApp] 200 GET /user/admin/api/kernels?1773571774069 (admin@172.20.0.1) 0.47ms
+jupyterhub  | [I 2026-03-15 10:49:34.079 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571774076 (admin@172.20.0.1) 2.40ms
+jupyterhub  | [I 2026-03-15 10:49:34.623 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571774581 (admin@172.20.0.1) 0.75ms
+jupyterhub  | [I 2026-03-15 10:49:39.816 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571779812 (admin@172.20.0.1) 2.15ms
+jupyterhub  | [I 2026-03-15 10:49:41.348 JupyterHub log:191] 200 GET /hub/api/user (admin@172.20.0.2) 6.73ms
+jupyterhub  | [I 2026-03-15 10:49:41.348 ServerApp] 200 GET /user/admin/api/terminals?1773571781338 (admin@172.20.0.1) 8.71ms
+jupyterhub  | [I 2026-03-15 10:49:44.076 ServerApp] 200 GET /user/admin/api/sessions?1773571784075 (admin@172.20.0.1) 0.78ms
+jupyterhub  | [I 2026-03-15 10:49:44.086 ServerApp] 200 GET /user/admin/api/kernels?1773571784085 (admin@172.20.0.1) 0.49ms
+jupyterhub  | [I 2026-03-15 10:49:45.946 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571785944 (admin@172.20.0.1) 0.87ms
+jupyterhub  | [I 2026-03-15 10:49:45.949 ServerApp] 200 GET /user/admin/api/me?1773571785948 (admin@172.20.0.1) 0.42ms
+jupyterhub  | [I 2026-03-15 10:49:49.837 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571789832 (admin@172.20.0.1) 2.58ms
+jupyterhub  | [I 2026-03-15 10:49:51.052 ServerApp] 200 PATCH /user/admin/api/contents/lakefs_example_notebook.ipynb?1773571790999 (admin@172.20.0.1) 2.10ms
+jupyterhub  | [I 2026-03-15 10:49:51.063 ServerApp] 200 PATCH /user/admin/api/sessions/08f6b4c8-ab26-411e-aa73-aed15bdf8cef?1773571791055 (admin@172.20.0.1) 0.77ms
+jupyterhub  | [I 2026-03-15 10:49:51.065 ServerApp] 200 GET /user/admin/api/contents/lakefs_example.ipynb/checkpoints?1773571791057 (admin@172.20.0.1) 1.01ms
+jupyterhub  | [I 2026-03-15 10:49:51.067 ServerApp] 200 GET /user/admin/api/sessions?1773571791066 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:49:51.069 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571791059 (admin@172.20.0.1) 2.86ms
+jupyterhub  | [I 2026-03-15 10:49:51.099 ServerApp] 200 PATCH /user/admin/api/sessions/08f6b4c8-ab26-411e-aa73-aed15bdf8cef?1773571791055 (admin@172.20.0.1) 0.74ms
+jupyterhub  | [I 2026-03-15 10:49:51.102 ServerApp] 200 GET /user/admin/api/sessions?1773571791101 (admin@172.20.0.1) 0.67ms
+jupyterhub  | [I 2026-03-15 10:49:51.367 ServerApp] 200 GET /user/admin/api/terminals?1773571791364 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:49:51.611 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1773571791568 (admin@172.20.0.1) 0.74ms
+jupyterhub  | [I 2026-03-15 10:49:54.095 ServerApp] 200 GET /user/admin/api/kernels?1773571794093 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:49:57.187 ServerApp] 200 GET /user/admin/api/contents/lakefs_example.ipynb?content=0&1773571797182 (admin@172.20.0.1) 1.14ms
+jupyterhub  | [I 2026-03-15 10:49:57.231 ServerApp] Saving file at /lakefs_example.ipynb
+jupyterhub  | [I 2026-03-15 10:49:57.244 ServerApp] 200 PUT /user/admin/api/contents/lakefs_example.ipynb?1773571797188 (admin@172.20.0.1) 13.96ms
+jupyterhub  | [I 2026-03-15 10:49:57.250 ServerApp] 200 GET /user/admin/api/contents/lakefs_example.ipynb/checkpoints?1773571797247 (admin@172.20.0.1) 0.98ms
+jupyterhub  | [I 2026-03-15 10:49:57.254 ServerApp] 201 POST /user/admin/api/contents/lakefs_example.ipynb/checkpoints?1773571797247 (admin@172.20.0.1) 2.26ms
+jupyterhub  | [I 2026-03-15 10:49:57.255 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571797248 (admin@172.20.0.1) 2.58ms
+jupyterhub  | [I 2026-03-15 10:49:57.282 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571797278 (admin@172.20.0.1) 2.14ms
+jupyterhub  | [I 2026-03-15 10:50:01.118 ServerApp] 200 GET /user/admin/api/sessions?1773571801111 (admin@172.20.0.1) 0.67ms
+jupyterhub  | [I 2026-03-15 10:50:01.375 ServerApp] 200 GET /user/admin/api/terminals?1773571801371 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:50:04.117 ServerApp] 200 GET /user/admin/api/kernels?1773571804115 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:50:07.289 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571807285 (admin@172.20.0.1) 2.27ms
+jupyterhub  | [I 2026-03-15 10:50:11.126 ServerApp] 200 GET /user/admin/api/sessions?1773571811123 (admin@172.20.0.1) 0.62ms
+jupyterhub  | [I 2026-03-15 10:50:11.382 ServerApp] 200 GET /user/admin/api/terminals?1773571811379 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:50:14.130 ServerApp] 200 GET /user/admin/api/kernels?1773571814126 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:50:17.300 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571817295 (admin@172.20.0.1) 2.14ms
+jupyterhub  | [I 2026-03-15 10:50:21.147 ServerApp] 200 GET /user/admin/api/sessions?1773571821143 (admin@172.20.0.1) 0.75ms
+jupyterhub  | [I 2026-03-15 10:50:21.402 ServerApp] 200 GET /user/admin/api/terminals?1773571821397 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:50:24.139 ServerApp] 200 GET /user/admin/api/kernels?1773571824136 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:50:27.324 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571827318 (admin@172.20.0.1) 2.19ms
+jupyterhub  | [I 2026-03-15 10:50:31.159 ServerApp] 200 GET /user/admin/api/sessions?1773571831155 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:50:31.413 ServerApp] 200 GET /user/admin/api/terminals?1773571831408 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:50:34.143 ServerApp] 200 GET /user/admin/api/kernels?1773571834141 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:50:37.332 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571837328 (admin@172.20.0.1) 2.06ms
+jupyterhub  | [I 2026-03-15 10:50:41.178 ServerApp] 200 GET /user/admin/api/sessions?1773571841175 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:50:41.424 ServerApp] 200 GET /user/admin/api/terminals?1773571841421 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:50:44.152 ServerApp] 200 GET /user/admin/api/kernels?1773571844149 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:50:46.968 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571846964 (admin@172.20.0.1) 1.01ms
+jupyterhub  | [I 2026-03-15 10:50:46.971 ServerApp] 200 GET /user/admin/api/me?1773571846965 (admin@172.20.0.1) 0.40ms
+jupyterhub  | [I 2026-03-15 10:50:47.350 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571847346 (admin@172.20.0.1) 2.08ms
+jupyterhub  | [I 2026-03-15 10:50:51.194 ServerApp] 200 GET /user/admin/api/sessions?1773571851191 (admin@172.20.0.1) 0.59ms
+jupyterhub  | [I 2026-03-15 10:50:51.430 ServerApp] 200 GET /user/admin/api/terminals?1773571851427 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:50:54.165 ServerApp] 200 GET /user/admin/api/kernels?1773571854161 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:50:57.372 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571857366 (admin@172.20.0.1) 2.31ms
+jupyterhub  | [I 2026-03-15 10:51:01.212 ServerApp] 200 GET /user/admin/api/sessions?1773571861208 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [I 2026-03-15 10:51:01.442 ServerApp] 200 GET /user/admin/api/terminals?1773571861438 (admin@172.20.0.1) 0.52ms
+jupyterhub  | [I 2026-03-15 10:51:04.176 ServerApp] 200 GET /user/admin/api/kernels?1773571864174 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:51:07.379 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571867375 (admin@172.20.0.1) 2.22ms
+jupyterhub  | [I 2026-03-15 10:51:11.222 ServerApp] 200 GET /user/admin/api/sessions?1773571871220 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:51:11.456 ServerApp] 200 GET /user/admin/api/terminals?1773571871454 (admin@172.20.0.1) 0.53ms
+jupyterhub  | [I 2026-03-15 10:51:14.189 ServerApp] 200 GET /user/admin/api/kernels?1773571874186 (admin@172.20.0.1) 0.55ms
+jupyterhub  | [I 2026-03-15 10:51:17.395 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571877391 (admin@172.20.0.1) 2.31ms
+jupyterhub  | [I 2026-03-15 10:51:21.241 ServerApp] 200 GET /user/admin/api/sessions?1773571881238 (admin@172.20.0.1) 0.63ms
+jupyterhub  | [I 2026-03-15 10:51:21.464 ServerApp] 200 GET /user/admin/api/terminals?1773571881460 (admin@172.20.0.1) 0.76ms
+jupyterhub  | [I 2026-03-15 10:51:24.195 ServerApp] 200 GET /user/admin/api/kernels?1773571884192 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:51:27.415 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571887409 (admin@172.20.0.1) 2.20ms
+jupyterhub  | [I 2026-03-15 10:51:31.248 ServerApp] 200 GET /user/admin/api/sessions?1773571891244 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:51:31.476 ServerApp] 200 GET /user/admin/api/terminals?1773571891473 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:51:34.213 ServerApp] 200 GET /user/admin/api/kernels?1773571894209 (admin@172.20.0.1) 0.90ms
+jupyterhub  | [I 2026-03-15 10:51:37.432 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571897425 (admin@172.20.0.1) 2.34ms
+jupyterhub  | [I 2026-03-15 10:51:41.263 ServerApp] 200 GET /user/admin/api/sessions?1773571901261 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:51:41.486 ServerApp] 200 GET /user/admin/api/terminals?1773571901480 (admin@172.20.0.1) 0.87ms
+jupyterhub  | [I 2026-03-15 10:51:44.227 ServerApp] 200 GET /user/admin/api/kernels?1773571904225 (admin@172.20.0.1) 0.56ms
+jupyterhub  | [I 2026-03-15 10:51:47.453 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571907448 (admin@172.20.0.1) 2.47ms
+jupyterhub  | [I 2026-03-15 10:51:47.985 ServerApp] 200 GET /user/admin/api/kernelspecs?1773571907982 (admin@172.20.0.1) 0.91ms
+jupyterhub  | [I 2026-03-15 10:51:47.988 ServerApp] 200 GET /user/admin/api/me?1773571907982 (admin@172.20.0.1) 0.40ms
+jupyterhub  | [I 2026-03-15 10:51:51.279 ServerApp] 200 GET /user/admin/api/sessions?1773571911275 (admin@172.20.0.1) 0.58ms
+jupyterhub  | [I 2026-03-15 10:51:51.495 ServerApp] 200 GET /user/admin/api/terminals?1773571911493 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:51:54.239 ServerApp] 200 GET /user/admin/api/kernels?1773571914235 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:51:57.466 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571917461 (admin@172.20.0.1) 2.29ms
+jupyterhub  | [I 2026-03-15 10:52:01.295 ServerApp] 200 GET /user/admin/api/sessions?1773571921291 (admin@172.20.0.1) 0.63ms
+jupyterhub  | [I 2026-03-15 10:52:01.510 ServerApp] 200 GET /user/admin/api/terminals?1773571921507 (admin@172.20.0.1) 0.51ms
+jupyterhub  | [I 2026-03-15 10:52:04.256 ServerApp] 200 GET /user/admin/api/kernels?1773571924254 (admin@172.20.0.1) 0.57ms
+jupyterhub  | [I 2026-03-15 10:52:07.478 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571927474 (admin@172.20.0.1) 1.98ms
+jupyterhub  | [I 2026-03-15 10:52:11.308 ServerApp] 200 GET /user/admin/api/sessions?1773571931305 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:52:11.527 ServerApp] 200 GET /user/admin/api/terminals?1773571931525 (admin@172.20.0.1) 0.50ms
+jupyterhub  | [I 2026-03-15 10:52:14.264 ServerApp] 200 GET /user/admin/api/kernels?1773571934260 (admin@172.20.0.1) 0.60ms
+jupyterhub  | [I 2026-03-15 10:52:17.497 ServerApp] 200 GET /user/admin/api/contents?content=1&1773571937492 (admin@172.20.0.1) 2.16ms
+jupyterhub  | [I 2026-03-15 10:52:21.314 ServerApp] 200 GET /user/admin/api/sessions?1773571941311 (admin@172.20.0.1) 0.61ms
+jupyterhub  | [I 2026-03-15 10:52:21.545 ServerApp] 200 GET /user/admin/api/terminals?1773571941541 (admin@172.20.0.1) 0.54ms
+jupyterhub  | [I 2026-03-15 10:52:24.279 ServerApp] 200 GET /user/admin/api/kernels?1773571944274 (admin@172.20.0.1) 0.72ms

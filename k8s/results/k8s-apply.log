@@ -1,0 +1,4 @@
+deployment.apps/ml-service unchanged
+ingress.networking.k8s.io/ml-service-ingress unchanged
+secret/ml-service-secrets configured
+service/ml-service unchanged

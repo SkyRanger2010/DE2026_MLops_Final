@@ -1,0 +1,80 @@
+============================================================
+ML Service API tests
+============================================================
+
+=== Test: GET / ===
+Status: 200
+Response: {
+  "service": "ML Service",
+  "version": "1.0.0",
+  "status": "running"
+}
+
+=== Test: GET /health ===
+Status: 200
+Response: {
+  "status": "healthy"
+}
+
+=== Test: POST /api/v1/predict ===
+Request: {
+  "features": [
+    1.5,
+    2.3,
+    3.7
+  ]
+}
+Status: 200
+Response: {
+  "prediction": 2.34,
+  "model_version": "1.0.0",
+  "timestamp": "2026-03-15T12:15:09.419143"
+}
+
+=== Test: Multiple requests ===
+Request 1: [1.0, 2.0, 3.0] -> 1.90
+Request 2: [0.5, 1.5, 2.5] -> 1.40
+Request 3: [2.0, 3.0, 4.0] -> 2.90
+Request 4: [1.5, 2.5, 3.5] -> 2.40
+Request 5: [0.8, 1.8, 2.8] -> 1.70
+
+=== Test: GET /api/v1/logs ===
+Status: 200
+Logs count: 5
+Latest log: {
+  "id": 68,
+  "timestamp": "2026-03-15T12:15:11.474519",
+  "input_features": [
+    0.8,
+    1.8,
+    2.8
+  ],
+  "output_prediction": 1.7,
+  "model_version": "1.0.0",
+  "inference_time_ms": 0.029802322387695312
+}
+
+=== Test: GET /metrics ===
+Status: 200
+Metrics found: 39
+
+Metrics examples:
+  python_gc_objects_collected_total{generation="0"} 4590.0
+  python_gc_objects_collected_total{generation="1"} 10692.0
+  python_gc_objects_collected_total{generation="2"} 1342.0
+  python_gc_objects_uncollectable_total{generation="0"} 0.0
+  python_gc_objects_uncollectable_total{generation="1"} 0.0
+
+============================================================
+Test results
+============================================================
+PASS - Root endpoint
+PASS - Health endpoint
+PASS - Predict endpoint
+PASS - Multiple predictions
+PASS - Logs endpoint
+PASS - Metrics endpoint
+
+Summary: 6/6 tests passed
+
+All tests passed successfully!

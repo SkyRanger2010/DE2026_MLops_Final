@@ -1,0 +1,49 @@
+/usr/local/lib/python3.11/site-packages/pydantic/_internal/_fields.py:151: UserWarning: Field "model_version" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+{"timestamp": "2026-03-15T13:24:53.374336", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:24:53.374697", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.38}
+INFO:     10.244.0.1:39928 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:24:53.375612", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:24:53.375810", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.22}
+INFO:     10.244.0.1:39930 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:03.376195", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:03.376488", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.32}
+INFO:     10.244.0.1:48648 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:08.368702", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:08.368938", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.27}
+INFO:     10.244.0.1:35408 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:13.373702", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:13.373950", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.28}
+INFO:     10.244.0.1:35412 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:23.373534", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:23.373764", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.26}
+INFO:     10.244.0.1:51108 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:28.368780", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:28.369054", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.31}
+INFO:     10.244.0.1:43358 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:33.373155", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:33.373416", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.29}
+INFO:     10.244.0.1:43370 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:43.372534", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.3:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:43.372771", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.3:8888/health", "status_code": 200, "duration_ms": 0.3}
+INFO:     10.244.0.1:58680 - "GET /health HTTP/1.1" 200 OK
+/usr/local/lib/python3.11/site-packages/pydantic/_internal/_fields.py:151: UserWarning: Field "model_version" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+{"timestamp": "2026-03-15T13:25:43.357922", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.4:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:43.358313", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.4:8888/health", "status_code": 200, "duration_ms": 0.42}
+INFO:     10.244.0.1:46236 - "GET /health HTTP/1.1" 200 OK
+{"timestamp": "2026-03-15T13:25:43.359544", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://10.244.0.4:8888/health", "client": "10.244.0.1"}
+{"timestamp": "2026-03-15T13:25:43.359767", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://10.244.0.4:8888/health", "status_code": 200, "duration_ms": 0.25}
+INFO:     10.244.0.1:46244 - "GET /health HTTP/1.1" 200 OK

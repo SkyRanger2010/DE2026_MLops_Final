@@ -1,0 +1,7 @@
+mlflow  | 2026/03/15 07:50:47 INFO mlflow.store.db.utils: Updating database tables
+mlflow  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+mlflow  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+mlflow  | [2026-03-15 07:50:48 +0000] [59] [INFO] Starting gunicorn 21.2.0
+mlflow  | [2026-03-15 07:50:48 +0000] [59] [INFO] Listening at: http://0.0.0.0:5000 (59)
+mlflow  | [2026-03-15 07:50:48 +0000] [59] [INFO] Using worker: sync
+mlflow  | [2026-03-15 07:50:48 +0000] [60] [INFO] Booting worker with pid: 60

@@ -1,0 +1,36 @@
+ml-service  | /usr/local/lib/python3.11/site-packages/pydantic/_internal/_fields.py:151: UserWarning: Field "model_version" has conflict with protected namespace "model_".
+ml-service  | 
+ml-service  | You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+ml-service  |   warnings.warn(
+ml-service  | INFO:     Started server process [1]
+ml-service  | INFO:     Waiting for application startup.
+ml-service  | INFO:     Application startup complete.
+ml-service  | INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+ml-service  | {"timestamp": "2026-03-15T11:21:14.120762", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:14.121148", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/", "status_code": 200, "duration_ms": 0.41}
+ml-service  | INFO:     172.20.0.1:58366 - "GET / HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:14.135886", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/health", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:14.136212", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/health", "status_code": 200, "duration_ms": 0.36}
+ml-service  | INFO:     172.20.0.1:58374 - "GET /health HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:14.150477", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:14.150955", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "status_code": 422, "duration_ms": 0.5}
+ml-service  | INFO:     172.20.0.1:58384 - "POST /api/v1/predict HTTP/1.1" 422 Unprocessable Entity
+ml-service  | {"timestamp": "2026-03-15T11:21:21.660265", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:21.660574", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/", "status_code": 200, "duration_ms": 0.34}
+ml-service  | INFO:     172.20.0.1:37662 - "GET / HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:21.697303", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/health", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:21.697577", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/health", "status_code": 200, "duration_ms": 0.3}
+ml-service  | INFO:     172.20.0.1:37678 - "GET /health HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:21.701267", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:21.701713", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "status_code": 422, "duration_ms": 0.47}
+ml-service  | INFO:     172.20.0.1:37684 - "POST /api/v1/predict HTTP/1.1" 422 Unprocessable Entity
+ml-service  | {"timestamp": "2026-03-15T11:21:21.821232", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/api/v1/logs?limit=5", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:21.825513", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/api/v1/logs?limit=5", "status_code": 200, "duration_ms": 4.3}
+ml-service  | INFO:     172.20.0.1:37686 - "GET /api/v1/logs?limit=5 HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:34.061226", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:34.062162", "level": "INFO", "message": "Prediction completed", "module": "main", "function": "predict", "event": "prediction_made", "input_features": [1.5, 2.3, 3.7], "output_prediction": 2.34, "model_version": "1.0.0", "inference_time_ms": 0.45}
+ml-service  | {"timestamp": "2026-03-15T11:21:34.066542", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "POST", "url": "http://localhost:8888/api/v1/predict", "status_code": 200, "duration_ms": 5.34}
+ml-service  | INFO:     172.20.0.1:50974 - "POST /api/v1/predict HTTP/1.1" 200 OK
+ml-service  | {"timestamp": "2026-03-15T11:21:34.079680", "level": "INFO", "message": "Request received", "module": "main", "function": "log_requests", "event": "request_received", "method": "GET", "url": "http://localhost:8888/api/v1/logs?limit=5", "client": "172.20.0.1"}
+ml-service  | {"timestamp": "2026-03-15T11:21:34.081035", "level": "INFO", "message": "Request completed", "module": "main", "function": "log_requests", "event": "request_completed", "method": "GET", "url": "http://localhost:8888/api/v1/logs?limit=5", "status_code": 200, "duration_ms": 1.37}
+ml-service  | INFO:     172.20.0.1:50990 - "GET /api/v1/logs?limit=5 HTTP/1.1" 200 OK

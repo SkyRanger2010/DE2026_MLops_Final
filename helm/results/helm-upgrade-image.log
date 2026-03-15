@@ -1,0 +1,8 @@
+Release "ml-service-release" has been upgraded. Happy Helming!
+NAME: ml-service-release
+LAST DEPLOYED: Sun Mar 15 17:24:48 2026
+NAMESPACE: default
+STATUS: deployed
+REVISION: 2
+DESCRIPTION: Upgrade complete
+TEST SUITE: None

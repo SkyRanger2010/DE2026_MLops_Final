@@ -1,0 +1,68 @@
+airflow-init  | 
+airflow-init  | DB: postgresql+psycopg2://airflow:***@postgres-airflow:5432/airflow
+airflow-init  | Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres-airflow:5432/airflow
+airflow-init  | [[34m2026-03-15T08:19:28.390+0000[0m] {[34mmigration.py:[0m216} INFO[0m - Context impl PostgresqlImpl.[0m
+airflow-init  | [[34m2026-03-15T08:19:28.391+0000[0m] {[34mmigration.py:[0m219} INFO[0m - Will assume transactional DDL.[0m
+airflow-init  | [[34m2026-03-15T08:19:28.392+0000[0m] {[34mmigration.py:[0m216} INFO[0m - Context impl PostgresqlImpl.[0m
+airflow-init  | [[34m2026-03-15T08:19:28.392+0000[0m] {[34mmigration.py:[0m219} INFO[0m - Will assume transactional DDL.[0m
+airflow-init  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-init  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-init  | INFO  [alembic.runtime.migration] Running stamp_revision  -> 1949afb29106
+airflow-init  | Database migrating done!
+airflow-init  | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:337 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-init  | [[34m2026-03-15T08:19:30.448+0000[0m] {[34moverride.py:[0m1427} INFO[0m - Inserted Role: Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.451+0000[0m] {[34moverride.py:[0m1427} INFO[0m - Inserted Role: Public[0m
+airflow-init  | [[34m2026-03-15T08:19:30.452+0000[0m] {[34moverride.py:[0m924} WARNING[0m - No user yet created, use flask fab command to do it.[0m
+airflow-init  | [[34m2026-03-15T08:19:30.481+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can edit on Passwords[0m
+airflow-init  | [[34m2026-03-15T08:19:30.484+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can edit on Passwords to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.489+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on Passwords[0m
+airflow-init  | [[34m2026-03-15T08:19:30.492+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on Passwords to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.499+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can edit on My Password[0m
+airflow-init  | [[34m2026-03-15T08:19:30.503+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can edit on My Password to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.506+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on My Password[0m
+airflow-init  | [[34m2026-03-15T08:19:30.509+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on My Password to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.515+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can edit on My Profile[0m
+airflow-init  | [[34m2026-03-15T08:19:30.524+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can edit on My Profile to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.528+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on My Profile[0m
+airflow-init  | [[34m2026-03-15T08:19:30.530+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on My Profile to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.548+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can create on Users[0m
+airflow-init  | [[34m2026-03-15T08:19:30.550+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can create on Users to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.553+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on Users[0m
+airflow-init  | [[34m2026-03-15T08:19:30.556+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on Users to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.559+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can edit on Users[0m
+airflow-init  | [[34m2026-03-15T08:19:30.562+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can edit on Users to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.566+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can delete on Users[0m
+airflow-init  | [[34m2026-03-15T08:19:30.568+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can delete on Users to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.574+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on List Users[0m
+airflow-init  | [[34m2026-03-15T08:19:30.577+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on List Users to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.583+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on Security[0m
+airflow-init  | [[34m2026-03-15T08:19:30.585+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on Security to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.598+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can create on Roles[0m
+airflow-init  | [[34m2026-03-15T08:19:30.601+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can create on Roles to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.604+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on Roles[0m
+airflow-init  | [[34m2026-03-15T08:19:30.606+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on Roles to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.610+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can edit on Roles[0m
+airflow-init  | [[34m2026-03-15T08:19:30.613+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can edit on Roles to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.616+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can delete on Roles[0m
+airflow-init  | [[34m2026-03-15T08:19:30.618+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can delete on Roles to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.624+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on List Roles[0m
+airflow-init  | [[34m2026-03-15T08:19:30.627+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on List Roles to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.636+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on User Stats Chart[0m
+airflow-init  | [[34m2026-03-15T08:19:30.638+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on User Stats Chart to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.645+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on User's Statistics[0m
+airflow-init  | [[34m2026-03-15T08:19:30.648+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on User's Statistics to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.662+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on Permissions[0m
+airflow-init  | [[34m2026-03-15T08:19:30.665+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on Permissions to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.670+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on Actions[0m
+airflow-init  | [[34m2026-03-15T08:19:30.673+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on Actions to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.691+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on View Menus[0m
+airflow-init  | [[34m2026-03-15T08:19:30.700+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on View Menus to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.707+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on Resources[0m
+airflow-init  | [[34m2026-03-15T08:19:30.710+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on Resources to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.767+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: can read on Permission Views[0m
+airflow-init  | [[34m2026-03-15T08:19:30.770+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission can read on Permission Views to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:30.777+0000[0m] {[34moverride.py:[0m1829} INFO[0m - Created Permission View: menu access on Permission Pairs[0m
+airflow-init  | [[34m2026-03-15T08:19:30.779+0000[0m] {[34moverride.py:[0m1880} INFO[0m - Added Permission menu access on Permission Pairs to role Admin[0m
+airflow-init  | [[34m2026-03-15T08:19:31.474+0000[0m] {[34moverride.py:[0m1516} INFO[0m - Added user admin[0m
+airflow-init  | User "admin" created with role "Admin"
+airflow-init  | 2.9.0
