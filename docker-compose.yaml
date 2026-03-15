@@ -19,6 +19,7 @@ services:
     image: postgres:15
     container_name: postgres-mlflow
     profiles: ["mlflow"]
+    env_file: .env
     environment:
       POSTGRES_USER: ${MLFLOW_POSTGRES_USER:-mlflow}
       POSTGRES_PASSWORD: ${MLFLOW_POSTGRES_PASSWORD:-mlflow123}
@@ -39,6 +40,7 @@ services:
       dockerfile: Dockerfile
     container_name: mlflow
     profiles: ["mlflow"]
+    env_file: .env
     ports:
       - "5000:5000"
     command: >
@@ -65,6 +67,7 @@ services:
     image: postgres:15
     container_name: postgres-airflow
     profiles: ["airflow"]
+    env_file: .env
     environment:
       POSTGRES_USER: ${AIRFLOW_POSTGRES_USER:-airflow}
       POSTGRES_PASSWORD: ${AIRFLOW_POSTGRES_PASSWORD:-airflow123}
@@ -83,6 +86,7 @@ services:
     image: apache/airflow:2.9.0
     container_name: airflow-init
     profiles: ["airflow"]
+    env_file: .env
     environment:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
@@ -101,6 +105,7 @@ services:
     image: apache/airflow:2.9.0
     container_name: airflow-webserver
     profiles: ["airflow"]
+    env_file: .env
     ports:
       - "8080:8080"
     environment:
@@ -121,6 +126,7 @@ services:
     image: apache/airflow:2.9.0
     container_name: airflow-scheduler
     profiles: ["airflow"]
+    env_file: .env
     environment:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
@@ -139,6 +145,7 @@ services:
     image: apache/airflow:2.9.0
     container_name: airflow-triggerer
     profiles: ["airflow"]
+    env_file: .env
     environment:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${AIRFLOW_POSTGRES_USER:-airflow}:${AIRFLOW_POSTGRES_PASSWORD:-airflow123}@postgres-airflow:5432/${AIRFLOW_POSTGRES_DB:-airflow}
@@ -160,6 +167,7 @@ services:
     image: postgres:15
     container_name: postgres-lakefs
     profiles: ["lakefs"]
+    env_file: .env
     environment:
       POSTGRES_USER: ${LAKEFS_POSTGRES_USER:-lakefs}
       POSTGRES_PASSWORD: ${LAKEFS_POSTGRES_PASSWORD:-lakefs123}
@@ -178,6 +186,7 @@ services:
     image: minio/minio:latest
     container_name: minio
     profiles: ["lakefs"]
+    env_file: .env
     ports:
       - "9000:9000"
       - "9001:9001"
@@ -199,6 +208,7 @@ services:
     image: treeverse/lakefs:latest
     container_name: lakefs
     profiles: ["lakefs"]
+    env_file: .env
     ports:
       - "8001:8000"
     environment:
@@ -227,6 +237,7 @@ services:
       dockerfile: Dockerfile
     container_name: jupyterhub
     profiles: ["jupyterhub"]
+    env_file: .env
     ports:
       - "8000:8000"
     environment:
@@ -243,6 +254,7 @@ services:
     image: postgres:15
     container_name: postgres-mlservice
     profiles: ["ml-service"]
+    env_file: .env
     environment:
       POSTGRES_USER: ${MLSERVICE_POSTGRES_USER:-mlservice}
       POSTGRES_PASSWORD: ${MLSERVICE_POSTGRES_PASSWORD:-mlservice123}
@@ -263,6 +275,7 @@ services:
       dockerfile: Dockerfile
     container_name: ml-service
     profiles: ["ml-service"]
+    env_file: .env
     ports:
       - "8888:8888"
     environment:
@@ -281,6 +294,7 @@ services:
     image: prom/prometheus:latest
     container_name: prometheus
     profiles: ["monitoring"]
+    env_file: .env
     ports:
       - "9090:9090"
     volumes:
@@ -296,6 +310,7 @@ services:
     image: grafana/grafana:latest
     container_name: grafana
     profiles: ["monitoring"]
+    env_file: .env
     ports:
       - "3000:3000"
     environment:
@@ -315,6 +330,7 @@ services:
     image: postgres:15
     container_name: postgres-prompt-storage
     profiles: ["prompt-storage"]
+    env_file: .env
     environment:
       POSTGRES_USER: ${PROMPT_MLFLOW_POSTGRES_USER:-mlflow_prompt}
       POSTGRES_PASSWORD: ${PROMPT_MLFLOW_POSTGRES_PASSWORD:-mlflow_prompt123}
@@ -335,6 +351,7 @@ services:
       dockerfile: Dockerfile
     container_name: mlflow-prompt-storage
     profiles: ["prompt-storage"]
+    env_file: .env
     ports:
       - "5001:5000"
     command: >

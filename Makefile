@@ -1,5 +1,6 @@
-# Явная загрузка .env (решает проблему, когда переменные не подтягиваются)
-COMPOSE := docker compose --env-file .env
+# Docker Compose: docker-compose (v1) или docker compose (v2)
+# Проверка: docker-compose --version или docker compose version
+COMPOSE ?= docker-compose
 
 .PHONY: help setup-env up-all down status logs
 .PHONY: up-mlflow down-mlflow logs-mlflow
