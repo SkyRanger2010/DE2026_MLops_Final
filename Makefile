@@ -1,5 +1,5 @@
-# Явная загрузка .env (решает проблему, когда переменные не подтягиваются)
-COMPOSE := docker compose --env-file .env
+# Docker Compose подтягивает .env из текущей директории автоматически
+COMPOSE := docker compose
 
 .PHONY: help setup-env up-all down status logs
 .PHONY: up-mlflow down-mlflow logs-mlflow
